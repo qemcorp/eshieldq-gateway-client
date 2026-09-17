@@ -1,0 +1,95 @@
+{
+  "_comment": "Provenance and delta declaration for this published tree. `verified_id` is the sha256 of the release asset, or the tag's commit OID for a git-tag artifact, as verified against the publisher's SHA256SUMS and against the recorded first-observation digest. `files` declares what was published unchanged, what was stripped, and what was generated. Nothing here is hand-written.",
+  "artifact": "eshieldq-gateway-client",
+  "shape": "python-sdist",
+  "version": "4.1.27",
+  "release_tag": "py/eshieldq-gateway-client/v4.1.27",
+  "verified_id": "905ea6deca46fe086f43e93bd6b12da39482682416002a9061dcf979104baafc",
+  "public_repo": "qemcorp/eshieldq-gateway-client",
+  "staged_utc": "2026-09-17T23:33:25Z",
+  "source_files": [
+    ".gitignore",
+    "LICENSE.md",
+    "PKG-INFO",
+    "README.md",
+    "eshieldq/gateway/client/__init__.py",
+    "eshieldq/gateway/client/cert_utils.py",
+    "eshieldq/gateway/client/client_acl.py",
+    "eshieldq/gateway/client/client_auth.py",
+    "eshieldq/gateway/client/client_base.py",
+    "eshieldq/gateway/client/client_certs.py",
+    "eshieldq/gateway/client/client_crypto.py",
+    "eshieldq/gateway/client/client_debug.py",
+    "eshieldq/gateway/client/client_eaas.py",
+    "eshieldq/gateway/client/client_identity.py",
+    "eshieldq/gateway/client/client_intf.py",
+    "eshieldq/gateway/client/client_ipsec.py",
+    "eshieldq/gateway/client/client_stats.py",
+    "eshieldq/gateway/client/client_sys.py",
+    "eshieldq/gateway/client/client_users.py",
+    "pyproject.toml"
+  ],
+  "files": {
+    "VERBATIM": {
+      "LICENSE.md": {
+        "sha256": "953e6299c0c7618b9d2e2b4e35343bf6feb5170ccf5cff96267839195120f1c6"
+      },
+      "eshieldq/gateway/client/__init__.py": {
+        "sha256": "c70cea638eb38403c6a9d52c51d4e4f1ad7f1ad9f3c022d276e58d4113b6e38a"
+      },
+      "eshieldq/gateway/client/cert_utils.py": {
+        "sha256": "f0f20729b6016a20a3859a13edc7397c5fddeabb85af9e3cafb34c7fa793f587"
+      },
+      "eshieldq/gateway/client/client_acl.py": {
+        "sha256": "488d3aaa97859090e905f9664e687a0d2f2e212f98e685ec62f0f6586de3faed"
+      },
+      "eshieldq/gateway/client/client_auth.py": {
+        "sha256": "be5920dd2206e3e110b94506d14fe82ec0328282d6b4a2bf4aa98afa5ae8f2e3"
+      },
+      "eshieldq/gateway/client/client_base.py": {
+        "sha256": "9db093678d013b2b1b002e16d3e6942b3b28d327f1822573215b8495188304e2"
+      },
+      "eshieldq/gateway/client/client_certs.py": {
+        "sha256": "17468e2b29db8357b27af719e649b86cec013df21c84705e9d1dcc6adf100f49"
+      },
+      "eshieldq/gateway/client/client_crypto.py": {
+        "sha256": "5ca628ff2f1bf5f6ae2e4e76be3e5358d9a7af76d86a3c84c76d6d80a33c3c24"
+      },
+      "eshieldq/gateway/client/client_eaas.py": {
+        "sha256": "c051c761e1cb6668f639553f872fb67c28b14495db47717218e8cf008d1c6331"
+      },
+      "eshieldq/gateway/client/client_identity.py": {
+        "sha256": "f0c234d880df6af3d8475c10246027e036ca4ed04e4b48f3f7fe9bf623c93a07"
+      },
+      "eshieldq/gateway/client/client_intf.py": {
+        "sha256": "25ced0d28600cf95ce0a5acf65ba233a77c76682ce4663b87224b76a1dde36d0"
+      },
+      "eshieldq/gateway/client/client_ipsec.py": {
+        "sha256": "888c4b83c12ab3c6271104ec3d3d0e8e3c54144497d6b1fcf101c6e091c89ee8"
+      },
+      "eshieldq/gateway/client/client_stats.py": {
+        "sha256": "bb2c04d5cb72b698152bd14811538e3586640773d309f96cb814ebd3c2cf3ee4"
+      },
+      "eshieldq/gateway/client/client_sys.py": {
+        "sha256": "6dfe3dc8fd690606669fffea4a336730701f053449d78e0c005753e4d3eaaa76"
+      },
+      "eshieldq/gateway/client/client_users.py": {
+        "sha256": "020d29239544bc6768c43a0d50c9e2a377fb7c8ee89ffa78d96fa6ce05d15611"
+      },
+      "pyproject.toml": {
+        "sha256": "2d1bb41478355184c8e3f56bcb0ce686e06f954e6fe8b71d3b0e62650b3394ea"
+      }
+    },
+    "REMOVED": [
+      ".gitignore",
+      "PKG-INFO",
+      "README.md",
+      "eshieldq/gateway/client/client_debug.py"
+    ],
+    "GENERATED": [
+      "README.md",
+      "SECURITY.md",
+      "public_sdk.json"
+    ]
+  }
+}
