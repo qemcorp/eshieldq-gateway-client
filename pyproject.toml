@@ -1,0 +1,78 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eshieldq-gateway-client"
+dynamic = ["version"]
+description = "The eShield-Q Gateway REST API Client."
+readme = "README.md"
+license = {file = "LICENSE.md"}
+requires-python = ">=3.10"
+authors = [
+    { name = "Jason Thomas", email = "info@quantumemotion.com" },
+]
+classifiers = [
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "requests",
+    # Retry(other=...) in open_session(); added in urllib3 1.26.
+    "urllib3>=1.26",
+    # client_sys.py imports pydantic.networks at import time; it arrived transitively via schemas.
+    "pydantic",
+    "cryptography",
+    # >=4.1.10: DeviceLicenseStatusModel must carry swupdate_min_version, or the
+    # client hands callers a status object missing the field they assert on.
+    # >=4.1.11: SwupdateStatus.available is parsed with SwUpdateMetadata, whose
+    # version/channel/size/digest rules arrived there.
+    # >=4.1.25: optional QEaaS kernel feed metadata.
+    # >=4.1.33: SharedSecretDataModel validates type, which post_shared_secret relies on.
+    # >=4.1.34: CertSigningRequestModel and CsrResponseModel carry block_private_key_export.
+    # >=4.1.36: KeyInfoModel carries block_private_key_export, which the key upload checks.
+    # >=4.1.37: a RADIUS server secret has the RFC 2865 minimum length, so a short one
+    # is refused before it is sent.
+    # >=4.1.48: the password routes' read timeouts come from the appliance waits there.
+    # >=4.1.49: interfaces are selected by role (RouteModel.interface_role).
+    "eshieldq-gateway-schemas>=4.1.49,<5"
+]
+
+
+[project.urls]
+Homepage = "https://quantumemotion.com/"
+Documentation = "https://eshieldq-gateway-docs.readthedocs.io/en/latest/"
+
+[tool.hatch.version]
+path = "eshieldq/gateway/client/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["eshieldq"]
+
+[tool.hatch.build.targets.sdist]
+# INCLUDE, not exclude. An exclude list means "the whole repository root minus
+# these", so anything added beside the package rides along silently: the sdist
+# was shipping the monorepo .gitignore (an internal directory map, and a file
+# `git add` obeys) and, for the client, the entire 113-file docs/ tree. The
+# published package should be the package.
+include = [
+  "eshieldq/",
+  "pyproject.toml",
+  "README.md",
+  "LICENSE.md",
+]
+# hatchling force-includes a few things regardless of `include` -- notably
+# .gitignore (so an sdist can rebuild under VCS) and any nested README. Neither
+# belongs in a published package: the .gitignore is the whole monorepo's.
+exclude = [
+  ".gitignore",
+  "docs/",
+]
+
+
+

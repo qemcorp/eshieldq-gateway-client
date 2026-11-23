@@ -1,0 +1,97 @@
+{
+  "_comment": "Provenance and delta declaration for this published tree. `verified_id` is the sha256 of the release asset, or the tag's commit OID for a git-tag artifact, as verified against the publisher's SHA256SUMS and against the recorded first-observation digest. `files` declares what was published unchanged, what was stripped, and what was generated. Nothing here is hand-written.",
+  "artifact": "eshieldq-gateway-client",
+  "shape": "python-sdist",
+  "version": "4.1.52",
+  "release_tag": "py/eshieldq-gateway-client/v4.1.52",
+  "verified_id": "ee71fe0cb3a6e8f621a259638ff2638e3048288ec417726645d0f1a207e36325",
+  "public_repo": "qemcorp/eshieldq-gateway-client",
+  "staged_utc": "2026-11-23T23:55:29Z",
+  "source_files": [
+    ".gitignore",
+    "LICENSE.md",
+    "PKG-INFO",
+    "README.md",
+    "eshieldq/gateway/client/__init__.py",
+    "eshieldq/gateway/client/cert_utils.py",
+    "eshieldq/gateway/client/client_acl.py",
+    "eshieldq/gateway/client/client_auth.py",
+    "eshieldq/gateway/client/client_base.py",
+    "eshieldq/gateway/client/client_certs.py",
+    "eshieldq/gateway/client/client_crypto.py",
+    "eshieldq/gateway/client/client_debug.py",
+    "eshieldq/gateway/client/client_eaas.py",
+    "eshieldq/gateway/client/client_identity.py",
+    "eshieldq/gateway/client/client_intf.py",
+    "eshieldq/gateway/client/client_ipsec.py",
+    "eshieldq/gateway/client/client_stats.py",
+    "eshieldq/gateway/client/client_sys.py",
+    "eshieldq/gateway/client/client_users.py",
+    "pyproject.toml"
+  ],
+  "files": {
+    "VERBATIM": {
+      "LICENSE.md": {
+        "sha256": "953e6299c0c7618b9d2e2b4e35343bf6feb5170ccf5cff96267839195120f1c6"
+      },
+      "eshieldq/gateway/client/__init__.py": {
+        "sha256": "85900f5395488178624e6cd9e479875ebdf46613108adc2bb0ad3b5d66479f92"
+      },
+      "eshieldq/gateway/client/cert_utils.py": {
+        "sha256": "f0f20729b6016a20a3859a13edc7397c5fddeabb85af9e3cafb34c7fa793f587"
+      },
+      "eshieldq/gateway/client/client_acl.py": {
+        "sha256": "488d3aaa97859090e905f9664e687a0d2f2e212f98e685ec62f0f6586de3faed"
+      },
+      "eshieldq/gateway/client/client_auth.py": {
+        "sha256": "95010a9eeea8bc8aa5a74eeb4272c2cf1e41fd0d4872fd246825491f93fdbfee"
+      },
+      "eshieldq/gateway/client/client_base.py": {
+        "sha256": "afa984a709667b80799cf98d86f4efe161dc5d6c02af9bee9250a7b0d40efd73"
+      },
+      "eshieldq/gateway/client/client_certs.py": {
+        "sha256": "9a4739c09bf12cde0d0c9d27342f7deace9d3f19174e4b323b7b076de0530759"
+      },
+      "eshieldq/gateway/client/client_crypto.py": {
+        "sha256": "5ca628ff2f1bf5f6ae2e4e76be3e5358d9a7af76d86a3c84c76d6d80a33c3c24"
+      },
+      "eshieldq/gateway/client/client_eaas.py": {
+        "sha256": "3d8957037769f9e2803d42f81f2142a08682162f3c7240391849bcad56cc5555"
+      },
+      "eshieldq/gateway/client/client_identity.py": {
+        "sha256": "f0c234d880df6af3d8475c10246027e036ca4ed04e4b48f3f7fe9bf623c93a07"
+      },
+      "eshieldq/gateway/client/client_intf.py": {
+        "sha256": "29622d0b7de6dc7861eb480c9099cd68ef2adadfa4cc87d2f0e8bc3877d8c19a"
+      },
+      "eshieldq/gateway/client/client_ipsec.py": {
+        "sha256": "138f299e721695735fafae5e30488a7953eb0ef6763b52ab981c2caa38ba6c64"
+      },
+      "eshieldq/gateway/client/client_stats.py": {
+        "sha256": "e9fedc57cbe75700bac38dcc7d6fc76ffd3d64ae49919f993fda690c8712e081"
+      },
+      "eshieldq/gateway/client/client_sys.py": {
+        "sha256": "287e749cf2ab6b0efb5835e952d2699028fa6bb3ee9164f0c777b6ebb502073c"
+      },
+      "eshieldq/gateway/client/client_users.py": {
+        "sha256": "6de90b4a676e738db9d97f3076dc31eedfe569bfca98540439a02efde9cc4796"
+      },
+      "pyproject.toml": {
+        "sha256": "025b3e588b9856ad95309ea6e64f81a03d41885a5cd70f9f9526fbf6a5cc0b3a"
+      }
+    },
+    "REMOVED": [
+      ".gitignore",
+      "PKG-INFO",
+      "README.md",
+      "eshieldq/gateway/client/client_debug.py"
+    ],
+    "GENERATED": [
+      ".github/pypi/release_files.py",
+      ".github/workflows/publish-pypi.yml",
+      "README.md",
+      "SECURITY.md",
+      "public_sdk.json"
+    ]
+  }
+}
